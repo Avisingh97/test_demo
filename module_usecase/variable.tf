@@ -15,10 +15,16 @@ variable "bucket_name" {
 } */
 
 
-/* variable "instance" {
+variable "instance" {
   type = map(any)  
 }
- */
+
+
 variable "s3_bucket" {
   type = map(any)  
+}
+
+variable "iam" {
+  type = set(string)
+  
 }
